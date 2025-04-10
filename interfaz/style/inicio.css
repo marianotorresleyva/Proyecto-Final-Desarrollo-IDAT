@@ -1,0 +1,50 @@
+html {
+    font-size: 1.5vh;
+}
+/* Estilos para el contenedor principal */
+.inicio-container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+  
+/* Estilos para el encabezado */
+.inicio-container h2 {
+    font-size: 2.2rem;
+    color: #54007a;
+    margin-bottom: 20px;
+}
+  
+/* Estilos para el texto de párrafo */
+.inicio-container p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 20px;
+}
+  
+@media (max-width: 600px) {
+    .inicio-container h2 {
+        font-size: 1.4rem;
+    }
+      
+    /* Estilos para el texto de párrafo */
+    .inicio-container p {
+        font-size: 1rem;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .inicio-container h2 {
+        font-size: 1.8rem;
+    }
+      
+    /* Estilos para el texto de párrafo */
+    .inicio-container p {
+        font-size: 1.1rem;
+        line-height: 1;
+    }
+}

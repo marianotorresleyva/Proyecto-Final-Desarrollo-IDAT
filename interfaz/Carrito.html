@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/carrito.css">
+    <script src="js/banner.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+    <title>Primer Banner</title>
+</head>
+<body>
+    <h1 class="Reemplazo-Banner">Mi Pagina Web</h1>
+    <header>
+        <div class="banner">
+            <button class="banner-btn prev">❮</button>
+            <div class="slide">
+                <picture class="active">
+                    <source srcset="Imagenes/webp/presentacion-banner-01.webp" type="image/webp">
+                    <img class="img-baner" src="Imagenes/presentacion-banner-01.jpg" alt="Primera Imagen de Banner">
+                </picture>
+                <picture>
+                    <source srcset="Imagenes/webp/presentacion-banner-02.webp" type="image/webp">
+                    <img class="img-baner" src="Imagenes/presentacion-banner-02.jpg" alt="Segunda Imagen de Banner">
+                </picture>
+                <picture>
+                    <source srcset="Imagenes/webp/presentacion-banner-03.webp" type="image/webp">
+                    <img class="img-baner" src="Imagenes/presentacion-banner-03.jpg" alt="Tercera Imagen de Banner">
+                </picture>
+            </div>
+            <button class="banner-btn next">❯ </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Somos.html">Quienes Somos</a>
+                    <ul>
+                        <li><a href="Referencia.html">Referencia</a></li>
+                    </ul>
+                </li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Carrito.html">Carrito</a></li>
+                <li><a href="#">Administrador</a>
+                    <ul>
+                        <li><a href="#">Usuarios</a>
+                            <ul>
+                                <li><a href="#">Registrar</a></li>
+                                <li><a href="#">Actualizar</a></li>
+                                <li><a href="#">Eliminar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="Login.html">Iniciar Sesión</a></li>
+                <li><a href="Registro.html" id="nuevoRegistro">Registrarse</a></li>
+                <li><a href="" id="btn_menu_cerrar_sesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="carrito-cabecera">
+            <h1 class="carrito-titulo">Carrito de Compras</h1>
+            <a href="productos.html">
+                <button class="carrito-productos-data-button-agregar">Agregar</button>
+            </a>
+        </div>
+    
+        <div class="carrito-productos" id="carritoProductos">
+    
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📞 Teléfono: <a href="tel:+123456789">+1 234 567 89</a></p>
+                <p>📧 Email: <a href="mailto:info@empresa.com">info@empresa.com</a></p>
+                <p>📍 Dirección: Calle Ejemplo 123, Ciudad, País</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="quick-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

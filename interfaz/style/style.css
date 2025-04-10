@@ -1,0 +1,378 @@
+
+html {
+    font-size: 1.5vh;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Establece la altura del cuerpo al 100% de la ventana */
+}
+header {
+    height: 35vh; 
+    overflow: visible;
+    position: relative;
+    z-index: 10;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide picture {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+    
+.slide picture.active {
+    display: block;
+}
+
+.slide picture source,
+.slide picture .img-baner {
+    width: 100%;
+    height: 100%;
+    object-fit:fill; /* Asegura que la imagen cubra todo el espacio sin distorsión */
+    object-position: center center; /* Centra la imagen */
+}
+
+.banner-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1; /* Para que los botones estén por encima de las imágenes */
+  }
+  
+  .prev { left: 10px; }
+  .next { right: 10px; }
+
+  .banner-btn:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0px 15px;
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+nav ul li ul {
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    background-color: #444; 
+    display: none; 
+    min-width: 300px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 999; 
+}
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    position: relative;
+    margin: 10px 15px;
+}
+
+nav ul li ul li ul {
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    display: none;
+    z-index: 999;
+}
+
+nav ul li ul li:hover > ul {
+    display: block;
+}
+
+main {
+    z-index: 1;
+    position: relative;
+    overflow: visible;
+}
+
+.login-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh; 
+    background-color: #f5f5f5; 
+    text-align: center;
+    flex-direction: column;
+    z-index: 1;
+    overflow: visible;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 3rem; 
+    width: 80%; 
+    max-width: 25rem;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    z-index: 1;
+}
+
+.login-section form h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    color: #0077cc;
+  }
+
+.form-group {
+    width: 100%; 
+    margin-bottom: 1.5rem; 
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #007bff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+#btn-login {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+#btn-login:hover {
+    background-color: #0056b3;
+}
+
+#btn-login:active {
+    background-color: #004494; /
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    padding: 3vw 5vw;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2vw; 
+    max-width: 90vw;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 20vw; 
+    margin-bottom: 2vh;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+    border-bottom: 0.2rem solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 0.5vh;
+}
+footer {
+    background: #222;
+    color: #fff;
+    padding: 3vw 5vw;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2vw; 
+    max-width: 90vw;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 20vw; 
+    margin-bottom: 2vh;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+    border-bottom: 0.2rem solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 0.5vh;
+}
+
+.footer-section p, .footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-section a:hover {
+    color: #ffcc00;
+}
+
+.social-links, .quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li, .quick-links li {
+    margin-bottom: 0.8vh;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5vh;
+    border-top: 0.1rem solid #444;
+    margin-top: 2vh;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+#btn_menu_cerrar_sesion{
+    display: none;
+}
+
+.Reemplazo-Banner{
+    visibility: hidden;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; 
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Reemplazo-Banner{
+        visibility: visible;
+        display:block;
+        color: #ffffff;
+        background-color: #11360a;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .slide{
+        visibility: hidden;
+        display: none;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    
+    nav ul {
+        min-width: 3rem; 
+        font-size: 0.8rem;
+    }
+    
+    nav ul li {
+        margin: 0px 5px;
+    }
+    
+    nav ul li ul {
+        min-width: 5rem; 
+    }
+
+    nav ul li ul li {
+        margin: 5px 10px;
+    }
+    
+    .footer-container {
+        flex-wrap: wrap;
+    }
+}

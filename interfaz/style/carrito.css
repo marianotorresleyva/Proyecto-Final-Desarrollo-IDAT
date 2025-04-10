@@ -1,0 +1,166 @@
+.carrito-titulo{
+    text-align: center;
+    font-size: 35px;
+}
+
+.carrito-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .carrito-productos-image {
+    text-align: center;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .carrito-productos img{
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+  }
+  
+  .carrito-productos-data {
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .carrito-productos-data p{
+    color: #504f4f;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .carrito-productos-data-nombre {
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 1px;
+  }
+  
+  .carrito-productos-data-label {
+    font-weight: bold;
+  }
+
+  
+  .carrito-productos-data-button-editar {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .carrito-productos-data-button-editar :hover {
+    background-color: #0056b3;
+  }
+  
+  .carrito-productos-data-button-eliminar {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  
+  .carrito-productos-data-button-eliminar :hover {
+    background-color: #0056b3;
+  }
+
+  .carrito-productos-total{
+    width: 93%;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    height: 100px;
+    display: flex; /* Agrega flexbox */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: right; /* Centra horizontalmente los elementos */
+  }
+  .carrito-productos-total-label{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+.carrito-productos-total-monto{
+    font-size: 18px;
+}
+.carrito-productos-total-button-comprar{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.carrito-productos-total-button-eliminar{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.carrito-vacio {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.carrito-vacio h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.carrito-cabecera {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; /* Coloca los elementos al extremo izquierdo y derecho */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.carrito-titulo {
+  flex-grow: 1; /* Permite que el título ocupe el espacio restante */
+  text-align: center; /* Centra el texto del título horizontalmente */
+}
+
+.carrito-productos-data-button-agregar {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: bold;
+}
